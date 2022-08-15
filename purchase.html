@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>服務購買 | Looking For precious~~~</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./CSS/all.css">
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="container-fluid navbar navbar-expand-lg bg-white sticky-top py-3 nav-line">
+    <div class="container">
+      <!-- Logo -->
+      <h1><a class="navbar-brand custom-h1" href="index.html">撿到寶</a></h1>
+      <!-- Navbar -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center fw-bold d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link mx-3 active" aria-current="page" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="service.html">服務介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="design.html">設計作品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3 border-none" href="adoption.html">領養專區</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-btn btn btn-primary rounded-pill mx-3 px-5 py-1" href="purchase.html">毛孩似顏繪</a>
+          </li>
+        </ul>        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="container-fluid bg-img py-3">
+    <img src="./images/banner_service-sm.png" alt="banner" class="d-sm-none img-fluid w-100">
+    <img src="./images/banner.png" alt="banner" class="d-none d-sm-block img-fluid w-100">
+  </section>
+
+  <!-- Order -->
+  <section class="container-fluid bg-img">
+      <div class="row d-flex flex-column justify-content-center align-items-center">
+        <div class="col-11 col-md-8">
+          <form class="row g-4 bg-white rounded-3 px-4 pt-0 pb-4 mb-5 shadow  border-top border-primary border-5">
+              <h4 class="text-center fw-bold text-secondary pt-5 px-0 mt-0">填寫訂購資訊</h4>
+              <div class="col-md-6">
+                <label for="first name" class="form-label">名字</label>
+                <input type="text" class="form-control" id="first name">
+              </div>
+              <div class="col-md-6">
+                <label for="last name" class="form-label">姓氏</label>
+                <input type="text" class="form-control" id="last name">
+              </div>
+              <div class="col-12">
+                <label for="phone" class="form-label">手機號碼</label>
+                <input type="tel" class="form-control" id="phone">
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">電子郵件</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <label for="address" class="form-label mb-0">收件地址</label>
+              <div class="col-12 d-flex flex-column flex-md-row mt-2 ">
+                <select id="address" class="form-select me-4 mb-2 ">
+                  <option selected>請選擇城市</option>
+                  <option value="台北市">台北市</option>
+                  <option value="新北市">新北市</option>
+                  <option value="桃園市">桃園市</option>
+                  <option value="台中市">台中市</option>
+                  <option value="台南市">台南市</option>
+                  <option value="高雄市">高雄市</option>
+                </select>
+                <select id="address" class="form-select mb-2">
+                  <option selected>請選擇區域</option>
+                  <option value="北區">北區</option>
+                  <option value="中區">中區</option>
+                  <option value="南區">南區</option>
+                  <option value="西區">西區</option>
+                  <option value="東區">東區</option>
+                </select>
+              </div>
+              <div class="col-12 mt-0">
+                <input type="text" class="form-control" id="address" placeholder="請輸入詳細地址">
+              </div> 
+              <div class="col-md-12">
+                <label for="designer" class="form-label">選擇設計師風格</label>
+                <select id="designer" class="form-select">
+                  <option selected value="Meili">Meili</option>
+                  <option value="Zoe">Zoe</option>
+                  <option value="Michael">Michael</option>
+                  <option value="Birdy">Birdy</option>
+                </select>
+              </div>      
+              <div class="col-md-12">
+                <label for="district" class="form-label">付款方式</label>
+                <select id="district" class="form-select">
+                  <option selected value="貨到付款">貨到付款</option>
+                  <option value="線上轉帳">線上轉帳</option>
+                  <option value="超商取貨付款">超商取貨付款</option>
+                  <option value="Linepay">Linepay</option>
+                </select>
+              </div>           
+              <div class="col-12">
+                <label class="mb-2">加購服務</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="plus100">
+                  <label class="form-check-label" for="plus100" value="+100">送禮用包裝+100</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="plus250">
+                  <label class="form-check-label" for="plus250" value="+250">無框畫+250</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="mb-2"><label for="postscript">備註說明</label></p>
+                <textarea class="form-control mb-4" id="postscript" style="resize:none; width: 100%; height: 100px;"></textarea>
+              </div>
+              <p class="h4 text-center text-secondary fw-bold">總金額 NT$ 300</p>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary rounded-pill btn-lg d-block mx-auto px-5 mb-3 h4 fw-bold text-secondary">送出訂購資訊</button>
+              </div>
+          </form>
+        </div>
+      </div>
+  </section>
+
+  <!-- Join Us -->
+  <section class="pt-5 border-top border-primary border-3 container-fluid">
+    <ul class="row row-cols-1 row-cols-lg-2 ps-0">
+      <li class="col d-flex d-lg-flex flex-column flex-lg-row justify-content-center justify-content-lg-end align-items-center mb-5">
+        <img src="./images/link01.png" alt="shake hands" class="img-fluid d-block m-4">
+        <div class="text-center text-lg-start">
+          <h4>加入奴才團隊</h4>
+          <p>我也會畫畫，希望能盡一份心力！</p>
+          <a href="purchase.html" class="btn btn-outline-secondary section-btn section-btn-link rounded-pill px-5">聯絡我們</a>
+        </div>
+      </li>
+      <li class="col d-flex d-lg-flex flex-column flex-lg-row justify-content-center justify-content-lg-start align-items-center mb-5">
+        <img src="./images/link02.png" alt="shake hands" class="img-fluid d-block m-4">
+        <div class="text-center text-lg-start">
+          <h4>加入奴才團隊</h4>
+          <p>我也會畫畫，希望能盡一份心力！</p>
+          <a href="adoption.html" class="btn btn-outline-secondary section-btn section-btn-link rounded-pill px-5">領養專區</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white bg-secondary text-center py-4 container-fluid">
+    <p class="mb-0">Copyright © 2021 撿到寶.All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

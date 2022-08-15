@@ -1,0 +1,145 @@
+//通用樣式
+.font-k {
+  font-family:'Kalam', cursive;
+}
+
+.bg-img {
+  background-image: url(../../images/lightpaperfibers.png);
+}
+
+//Logo
+.custom-h1 {
+  background-image: url(../images/logo.png);
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 119px;
+    height: 40px;
+}
+
+//Navbar
+.nav-link {
+  color: $secondary;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.nav-link.active {
+  color: $primary !important;
+}
+
+.nav-btn {
+  color: $secondary;
+  font-weight: bold;
+  display: inline-block;
+  &:hover {
+    box-shadow: 0 3px 0px black;
+  }
+}
+
+.nav-line {
+  border-bottom: 3px solid $primary;
+}
+
+@media (min-width:576px) {
+  .nav-line{
+    border-bottom: 0px solid transparent;
+  }
+}
+
+//Index-Banner
+.banner-text {
+  font-family:'Kalam', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #858972;
+  -webkit-text-stroke: 1px white;
+}
+
+//Index-Gallery & Adoption
+.d-hover {
+  h6, p {
+    opacity: 0;
+  }
+  &:hover {
+    h6 {
+      opacity: .75;
+    }
+    p {
+      opacity: 1;
+    }
+    transition: .6s;
+    background-image:  linear-gradient(180deg , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  }
+}
+
+.section-btn {
+  font-size: 20px;
+  color: $secondary;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.section-btn-link {
+  color: $secondary;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  &:hover {
+    color: $secondary;
+    background: $primary;
+    border: 1px solid $primary;
+  }
+}
+
+.hover-img {
+  opacity: 0;
+}
+
+.img-hover {
+  box-shadow: 0 .5rem 1rem rgba($black, .15);
+  &:hover {
+    box-shadow: 0 1rem 1.5rem rgba($black, .35);
+    .hover-img {
+      transition: .8s;
+      opacity: 1;
+    }    
+  }
+}
+
+.fixed-hover {
+  &:hover {
+    .hover-img {
+      transition: .8s;
+      opacity: 1;
+    }    
+  }
+}
+
+//Design-Aside
+.nav-link-hover {
+  span {
+    display: none;
+  }
+  &:hover {
+    span {
+      display: inline;
+    }    
+  }
+}
+
+//Purchase
+
+
+
+
+
+
+
